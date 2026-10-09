@@ -26,7 +26,7 @@ function ContactPage() {
             <div className="contact-card">
               <h3>Phone</h3>
               <p>
-                <a href="tel:+254700000000">+254 700 000 000</a>
+                <a href="tel:+254794900455">+254 794900455</a>
               </p>
             </div>
             <div className="contact-card">
