@@ -70,13 +70,16 @@ function ContactPage() {
         <div className="container">
           <SectionHead tag="Location" title="Find us on campus" />
           <div className="map-placeholder reveal visible">
-            <div>
-              <h3>Murang'a University Campus</h3>
-              <p>Map / location embed placeholder area</p>
-              <small>
-                You can later replace this with a real Google Maps embed.
-              </small>
-            </div>
+            <iframe
+              title="Murang'a University of Technology location map"
+              src="https://www.google.com/maps?q=Murang%27a+University+of+Technology,+Murang%27a,+Kenya&output=embed"
+              width="100%"
+              height="420"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
