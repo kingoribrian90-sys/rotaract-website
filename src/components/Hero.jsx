@@ -1,3 +1,7 @@
+import studentsCollaborating from "../assets/fun-projects/students-collaborating.jpg";
+import fun1 from "../assets/fun-projects/fun-1.jpg";
+import fun5 from "../assets/fun-projects/fun-5.jpg";
+
 function Hero({ onNavigate }) {
   return (
     <section className="hero">
@@ -35,13 +39,13 @@ function Hero({ onNavigate }) {
         </div>
         <div className="hero-visual reveal visible">
           <div className="hero-card hero-card-main">
-            <img src="src\assets\fun-projects\students-collaborating.jpg" alt="Students collaborating" />
+            <img src={studentsCollaborating} alt="Students collaborating" />
           </div>
           <div className="hero-card hero-card-small top">
-            <img src="src\assets\fun-projects\fun-1.jpg" alt="Community activity" />
+            <img src={fun1} alt="Community activity" />
           </div>
           <div className="hero-card hero-card-small bottom">
-            <img src="src\assets\fun-projects\fun-5.jpg" alt="Youth leadership event" />
+            <img src={fun5} alt="Youth leadership event" />
           </div>
         </div>
       </div>

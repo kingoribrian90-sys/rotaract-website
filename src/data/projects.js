@@ -1,3 +1,10 @@
+import treePlantingDay from "../assets/tree-planting-day.jpeg";
+import funAtProjects from "../assets/fun-at-projects.jpeg";
+import sanitaryPadDonation from "../assets/fun-projects/sanitary-pad-donation.jpeg";
+import murangaPrisonsProject from "../assets/fun-projects/muranga-prisons-project.jpeg";
+import leadershipForum from "../assets/fun-projects/leadership-forum.jpeg";
+import footballFun from "../assets/football-fun.jpeg";
+
 export const projects = [
   {
     category: "environment",
@@ -6,7 +13,7 @@ export const projects = [
     description:
       "A green impact project promoting sustainability and environmental awareness.",
     date: "March 2026",
-    image: "src\\assets\\tree-planting-day.jpeg",
+    image: treePlantingDay,
     alt: "Tree planting initiative",
   },
   {
@@ -16,7 +23,7 @@ export const projects = [
     description:
       "A day of giving, engagement, and support through donations and shared activities.",
     date: "February 2026",
-    image: "src\\assets\\fun-at-projects.jpeg",
+    image: funAtProjects,
     alt: "Children's home visit",
   },
   {
@@ -26,7 +33,7 @@ export const projects = [
     description:
       "Supporting menstrual health dignity and access among school-going girls.",
     date: "October 2025",
-    image: "src\\assets\\fun-projects\\sanitary-pad-donation.jpeg",
+    image: sanitaryPadDonation,
     alt: "Sanitary towel donation drive",
   },
   {
@@ -36,7 +43,7 @@ export const projects = [
     description:
       "A day of giving, engagement, and support through donations and shared activities.",
     date: "January 2026",
-    image: "src\\assets\\fun-projects\\muranga-prisons-project.jpeg",
+    image: murangaPrisonsProject,
     alt: "Visit to Murang'a Women's Prison",
   },
   {
@@ -58,7 +65,7 @@ export const projects = [
     description:
       "Equipping students with practical leadership insight and responsible decision-making.",
     date: "November 2025",
-    image: "src\\assets\\fun-projects\\leadership-forum.jpeg",
+    image: leadershipForum,
     alt: "Campus leadership forum",
   },
   {
@@ -68,7 +75,7 @@ export const projects = [
     description:
       "Using sports to unite people, raise awareness, and create support for community causes.",
     date: "March 2026",
-    image: "src\\assets\\football-fun.jpeg",
+    image: footballFun,
     alt: "Charity football event",
   },
 ];
