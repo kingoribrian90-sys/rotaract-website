@@ -1056,9 +1056,12 @@ p {
 .footer-logo .logo-text span,
 .footer-logo .logo-text small,
 .site-footer h4,
-.site-footer a,
 .site-footer p,
 .site-footer li {
+  color: #e5e7eb;
+}
+
+.site-footer a {
   color: #e5e7eb;
 }
 
@@ -1074,8 +1077,11 @@ p {
   margin-top: 1rem;
 }
 
-.footer-links a:hover {
-  color: #fff;
+.site-footer a:hover,
+.footer-logo:hover .logo-text span,
+.footer-logo:hover .logo-text small {
+  color: #00b4d8;
+  text-decoration: underline;
 }
 
 .footer-bottom {
