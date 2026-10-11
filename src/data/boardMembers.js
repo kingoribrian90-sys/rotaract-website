@@ -21,6 +21,7 @@ export const boardMembers = [
     bio: "Leads the club's vision, partnerships, and strategic direction with a strong focus on impact and member growth.",
     image: racPresident,
     alt: "President",
+    Instagram: "https://www.instagram.com/wb_njoki_/",
   },
   {
     name: "Vanessa Wairimu",
@@ -28,6 +29,7 @@ export const boardMembers = [
     bio: "Supports executive leadership and ensures strong coordination across events, planning, and internal club operations.",
     image: vicePresident,
     alt: "Vice President",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Beverly Jean",
@@ -35,6 +37,7 @@ export const boardMembers = [
     bio: "Maintains club records, communication flow, and meeting structure with clarity and professionalism.",
     image: clubSecretary,
     alt: "Secretary",
+    Instagram: "https://www.instagram.com/xoxo_b.e.v/",
   },
   {
     name: "Justine Mwangi",
@@ -42,6 +45,7 @@ export const boardMembers = [
     bio: "Oversees club finances, budgeting, accountability, and resource planning for sustainable operations.",
     image: clubTreasurer,
     alt: "Treasurer",
+    Instagram: "https://www.instagram.com/justine_mwangi/", 
   },
   {
     name: "Gerry Peter",
@@ -49,6 +53,7 @@ export const boardMembers = [
     bio: "Strengthens member engagement, internal fellowship, and the overall club experience.",
     image: clubServiceDirector,
     alt: "Club Service Director",
+    Instagram: "https://www.instagram.com/santana/",
   },
   {
     name: "Terry Gachunga",
@@ -56,6 +61,7 @@ export const boardMembers = [
     bio: "Designs and coordinates outreach initiatives that address real community needs with measurable action.",
     image: communityServiceDirector,
     alt: "Community Service Director",
+    Instagram: "https://www.instagram.com/terry_gachunga/",
   },
   {
     name: "Brian King'ori",
@@ -63,6 +69,7 @@ export const boardMembers = [
     bio: "Drives learning opportunities, mentorship sessions, and growth-focused member programming.",
     image: pldDirector,
     alt: "Professional And Leadership Development Director",
+    Instagram: "https://www.instagram.com/kingoribrian90/",
   },
   {
     name: "Claire Gathoni",
@@ -70,6 +77,7 @@ export const boardMembers = [
     bio: "Shapes the club's visibility through communication, storytelling, branding, and digital presence.",
     image: publicRelationsDirector,
     alt: "Public Relations Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Shem Ndegwa",
@@ -77,6 +85,7 @@ export const boardMembers = [
     bio: "Guardian of the club's values and ethical standards, ensuring responsible leadership and decision-making.",
     image: governanceAndEthicsDirector,
     alt: "Governance and Ethics Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Shoba Wako",
@@ -84,6 +93,7 @@ export const boardMembers = [
     bio: "Represents the club in district and international Rotaract forums, fostering connections and collaboration.",
     image: internationalService,
     alt: "International Service Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Velony Kinyaa",
@@ -91,6 +101,7 @@ export const boardMembers = [
     bio: "Develop and manage fundraising strategies to support the club's initiatives and programs.",
     image: fundraising,
     alt: "Fundraising Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Alicia Wambui",
@@ -98,6 +109,7 @@ export const boardMembers = [
     bio: "Oversees member recruitment, retention, and engagement strategies.",
     image: membershipDirector,
     alt: "Membership Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "David Gichangi",
@@ -105,6 +117,7 @@ export const boardMembers = [
     bio: "Ensures the smooth operation of club meetings and events, maintaining order and protocol.",
     image: sergeantAtArms,
     alt: "Sergeant-at-Arms",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name:"Maureen Nkirotee",
@@ -112,6 +125,7 @@ export const boardMembers = [
     bio:"helps the club understand and support the Rotary Foundation's mission, programs, and funding opportunities.",
     image: trfDirector,
     alt:"TRF Director",
+    Instagram: "https://www.instagram.com/kingoribrian_90/",
   },
   {
     name: "Vanessa Kiarie",
@@ -119,5 +133,6 @@ export const boardMembers = [
     bio: "Advise the current president and ensure continuity in club operations.",
     image: ippAndClubAdvisor,
     alt: "Immediate Past President",
+    Instagram: "https://www.instagram.com/vanesa_kiarie/",
   },
 ];

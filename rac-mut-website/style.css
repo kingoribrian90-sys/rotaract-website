@@ -868,14 +868,25 @@ p {
 }
 
 .leader-socials a {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  min-width: 38px;
+  min-height: 38px;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  background-color: var(--bg);
   border: 1px solid var(--border);
   font-size: 0.9rem;
   font-weight: 700;
+  transition: var(--transition);
+}
+
+.leader-socials a:hover {
+  color: var(--bg);
+  background-color: var(--primary);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
 }
 
 /* =========================

@@ -1,4 +1,4 @@
-function LeaderCard({ name, role, bio, image, alt }) {
+function LeaderCard({ name, role, bio, image, alt, Instagram }) {
   return (
     <article className="leader-card reveal visible">
       <img src={image} alt={alt || role} />
@@ -7,9 +7,11 @@ function LeaderCard({ name, role, bio, image, alt }) {
         <span>{role}</span>
         <p>{bio}</p>
         <div className="leader-socials">
-          <a href="#">in</a>
-          <a href="#">ig</a>
-          <a href="#">✉</a>
+          
+          <a href={Instagram} target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+          
         </div>
       </div>
     </article>
