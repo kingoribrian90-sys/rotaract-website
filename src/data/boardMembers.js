@@ -21,7 +21,7 @@ export const boardMembers = [
     bio: "Leads the club's vision, partnerships, and strategic direction with a strong focus on impact and member growth.",
     image: racPresident,
     alt: "President",
-    Instagram: "https://www.instagram.com/wb_njoki_/",
+    Instagram: "https://www.instagram.com/wb.njoki/",
   },
   {
     name: "Vanessa Wairimu",
