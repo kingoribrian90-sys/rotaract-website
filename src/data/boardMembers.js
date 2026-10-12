@@ -45,7 +45,7 @@ export const boardMembers = [
     bio: "Oversees club finances, budgeting, accountability, and resource planning for sustainable operations.",
     image: clubTreasurer,
     alt: "Treasurer",
-    Instagram: "https://www.instagram.com/justine_mwangi/", 
+    Instagram: "https://www.instagram.com//", 
   },
   {
     name: "Gerry Peter",
@@ -53,7 +53,7 @@ export const boardMembers = [
     bio: "Strengthens member engagement, internal fellowship, and the overall club experience.",
     image: clubServiceDirector,
     alt: "Club Service Director",
-    Instagram: "https://www.instagram.com/santana/",
+    Instagram: "https://www.instagram.com/babysantanar/",
   },
   {
     name: "Terry Gachunga",
