@@ -61,7 +61,7 @@ export const boardMembers = [
     bio: "Designs and coordinates outreach initiatives that address real community needs with measurable action.",
     image: communityServiceDirector,
     alt: "Community Service Director",
-    Instagram: "https://www.instagram.com/thatgirlterry/",
+    Instagram: "https://www.instagram.com/thatgirlterry1/",
   },
   {
     name: "Brian King'ori",
