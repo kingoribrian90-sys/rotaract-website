@@ -1,6 +1,6 @@
 import racPresident from "../assets/rac-president.jpeg";
 import vicePresident from "../assets/vice-president.jpeg";
-import clubSecretary from "../assets/club-secretary.jpeg";
+import clubSecretary from "../assets/club_secretary.jpeg";
 import clubTreasurer from "../assets/club-treasurer.jpeg";
 import clubServiceDirector from "../assets/club-service-director.jpeg";
 import communityServiceDirector from "../assets/community-service-director.jpeg";
