@@ -1,6 +1,6 @@
-import studentsCollaborating from "../assets/fun-projects/students-collaborating.jpg";
-import fun1 from "../assets/fun-projects/fun-1.jpg";
-import fun5 from "../assets/fun-projects/fun-5.jpg";
+import studentsCollaborating from "../assets/fun-projects/students-collaborating.webp";
+import fun1 from "../assets/fun-projects/fun-1.webp";
+import fun5 from "../assets/fun-projects/fun-5.webp";
 
 function Hero({ onNavigate }) {
   return (
@@ -39,13 +39,35 @@ function Hero({ onNavigate }) {
         </div>
         <div className="hero-visual reveal visible">
           <div className="hero-card hero-card-main">
-            <img src={studentsCollaborating} alt="Students collaborating" />
+            <img
+              src={studentsCollaborating}
+              alt="Students collaborating"
+              width={1200}
+              height={900}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
           <div className="hero-card hero-card-small top">
-            <img src={fun1} alt="Community activity" />
+            <img
+              src={fun1}
+              alt="Community activity"
+              width={1200}
+              height={800}
+              loading="eager"
+              decoding="async"
+            />
           </div>
           <div className="hero-card hero-card-small bottom">
-            <img src={fun5} alt="Youth leadership event" />
+            <img
+              src={fun5}
+              alt="Youth leadership event"
+              width={1200}
+              height={900}
+              loading="eager"
+              decoding="async"
+            />
           </div>
         </div>
       </div>

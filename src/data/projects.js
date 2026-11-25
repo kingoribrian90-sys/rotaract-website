@@ -1,9 +1,9 @@
-import treePlantingDay from "../assets/tree-planting-day.jpeg";
-import funAtProjects from "../assets/fun-at-projects.jpeg";
-import sanitaryPadDonation from "../assets/fun-projects/sanitary-pad-donation.jpeg";
-import murangaPrisonsProject from "../assets/fun-projects/muranga-prisons-project.jpeg";
-import leadershipForum from "../assets/fun-projects/leadership-forum.jpeg";
-import footballFun from "../assets/football-fun.jpeg";
+import treePlantingDay from "../assets/tree-planting-day.webp";
+import funAtProjects from "../assets/fun-at-projects.webp";
+import sanitaryPadDonation from "../assets/fun-projects/sanitary-pad-donation.webp";
+import murangaPrisonsProject from "../assets/fun-projects/muranga-prisons-project.webp";
+import leadershipForum from "../assets/fun-projects/leadership-forum.webp";
+import footballFun from "../assets/football-fun.webp";
 
 export const projects = [
   {

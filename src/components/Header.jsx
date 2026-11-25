@@ -1,3 +1,5 @@
+import { routes } from "../data/seo";
+
 const links = [
   ["home", "Home"],
   ["about", "About"],
@@ -8,6 +10,16 @@ const links = [
   ["contact", "Contact"],
 ];
 
+function isModifiedClick(event) {
+  return (
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey ||
+    event.altKey ||
+    event.button !== 0
+  );
+}
+
 function Header({
   activeSection,
   menuOpen,
@@ -15,16 +27,19 @@ function Header({
   onToggleMenu,
   scrolled,
 }) {
+  const handleLinkClick = (event, section) => {
+    if (isModifiedClick(event)) return;
+    event.preventDefault();
+    onNavigate(section);
+  };
+
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`} id="header">
       <div className="container nav-wrap">
         <a
-          href="#home"
+          href={routes.home.path}
           className="logo"
-          onClick={(event) => {
-            event.preventDefault();
-            onNavigate("home");
-          }}
+          onClick={(event) => handleLinkClick(event, "home")}
         >
           <div className="logo-mark">R</div>
           <div className="logo-text">
@@ -36,36 +51,27 @@ function Header({
           {links.map(([id, label]) => (
             <a
               key={id}
-              href={`#${id}`}
+              href={routes[id].path}
               className={`nav-link ${activeSection === id ? "active" : ""}`}
               data-section={id}
-              onClick={(event) => {
-                event.preventDefault();
-                onNavigate(id);
-              }}
+              onClick={(event) => handleLinkClick(event, id)}
             >
               {label}
             </a>
           ))}
           <a
-            href="#contact"
+            href={routes.contact.path}
             className="btn btn-primary nav-cta mobile-only"
-            onClick={(event) => {
-              event.preventDefault();
-              onNavigate("contact");
-            }}
+            onClick={(event) => handleLinkClick(event, "contact")}
           >
             Join Us
           </a>
         </nav>
         <div className="nav-actions">
           <a
-            href="#contact"
+            href={routes.contact.path}
             className="btn btn-primary desktop-only"
-            onClick={(event) => {
-              event.preventDefault();
-              onNavigate("contact");
-            }}
+            onClick={(event) => handleLinkClick(event, "contact")}
           >
             Join Us
           </a>

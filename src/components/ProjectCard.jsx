@@ -6,7 +6,7 @@ function ProjectCard({
   title,
   description,
   date,
-  link = "#",
+  link,
 }) {
   return (
     <article
@@ -14,16 +14,20 @@ function ProjectCard({
       data-category={category}
     >
       <div className="card-image">
-        <img src={image} alt={alt} />
+        {image && image !== "#" && (
+          <img src={image} alt={alt} loading="lazy" decoding="async" />
+        )}
       </div>
       <div className="card-body">
         <span className="pill">{tag}</span>
         <h3>{title}</h3>
         <p>{description}</p>
         {date && <small>{date}</small>}
-        <a href={link} className="text-link">
-          Read More →
-        </a>
+        {link && link !== "#" && (
+          <a href={link} className="text-link">
+            Read More →
+          </a>
+        )}
       </div>
     </article>
   );

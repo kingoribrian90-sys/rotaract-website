@@ -1,19 +1,30 @@
+import { routes } from "../data/seo";
 import { socialLinks } from "../data/socialLinks";
 
 function Footer({ onNavigate }) {
   const links = ["about", "board", "projects", "events", "blog", "contact"];
+  const handleLinkClick = (event, section) => {
+    if (
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey ||
+      event.button !== 0
+    ) {
+      return;
+    }
+    event.preventDefault();
+    onNavigate(section);
+  };
 
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
           <a
-            href="#home"
+            href={routes.home.path}
             className="logo footer-logo"
-            onClick={(event) => {
-              event.preventDefault();
-              onNavigate("home");
-            }}
+            onClick={(event) => handleLinkClick(event, "home")}
           >
             <div className="logo-mark">R</div>
             <div className="logo-text">
@@ -32,11 +43,8 @@ function Footer({ onNavigate }) {
             {links.map((link) => (
               <li key={link}>
                 <a
-                  href={`#${link}`}
-                  onClick={(event) => {
-                    event.preventDefault();
-                    onNavigate(link);
-                  }}
+                  href={routes[link].path}
+                  onClick={(event) => handleLinkClick(event, link)}
                 >
                   {link[0].toUpperCase() + link.slice(1)}
                 </a>
