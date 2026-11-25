@@ -1,7 +1,7 @@
 function LeaderCard({ name, role, bio, image, alt, Instagram }) {
   return (
     <article className="leader-card reveal visible">
-      <img src={image} alt={alt || role} />
+      <img src={image} alt={alt || role} loading="lazy" decoding="async" />
       <div className="leader-info">
         <h3>{name}</h3>
         <span>{role}</span>

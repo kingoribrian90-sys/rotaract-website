@@ -23,11 +23,15 @@ function Gallery({ images = [] }) {
 
           return (
             <div className="gallery-item reveal visible" key={image || index}>
-              <img
-                src={image || "#"}
-                alt={alt}
-                onClick={() => setSelectedImage({ src: image, alt })}
-              />
+              {image && image !== "#" && (
+                <img
+                  src={image}
+                  alt={alt}
+                  loading="lazy"
+                  decoding="async"
+                  onClick={() => setSelectedImage({ src: image, alt })}
+                />
+              )}
             </div>
           );
         })}
@@ -44,7 +48,7 @@ function Gallery({ images = [] }) {
             >
               ×
             </button>
-            <img src={selectedImage.src} alt={selectedImage.alt} />
+            <img src={selectedImage.src} alt={selectedImage.alt} decoding="async" />
           </div>
         </div>
       )}

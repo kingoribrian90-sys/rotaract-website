@@ -1,18 +1,18 @@
-import racPresident from "../assets/rac-president.jpeg";
-import vicePresident from "../assets/vice-president.jpeg";
-import clubSecretary from "../assets/club_secretary.jpeg";
-import clubTreasurer from "../assets/club-treasurer.jpeg";
-import clubServiceDirector from "../assets/club-service-director.jpeg";
-import communityServiceDirector from "../assets/community-service-director.jpeg";
-import pldDirector from "../assets/pld-director.jpeg";
-import publicRelationsDirector from "../assets/public-relations-director.jpeg";
-import governanceAndEthicsDirector from "../assets/governance-and-ethics-director.jpeg";
-import internationalService from "../assets/international-sevice.jpeg";
-import fundraising from "../assets/fundraising.jpeg";
-import membershipDirector from "../assets/membership-director.jpeg";
-import sergeantAtArms from "../assets/sergeant-at-arms.jpeg";
-import trfDirector from "../assets/trf-director.jpeg";
-import ippAndClubAdvisor from "../assets/ipp-and-club-advisor.jpeg";
+import racPresident from "../assets/rac-president.webp";
+import vicePresident from "../assets/vice-president.webp";
+import clubSecretary from "../assets/club_secretary.webp";
+import clubTreasurer from "../assets/club-treasurer.webp";
+import clubServiceDirector from "../assets/club-service-director.webp";
+import communityServiceDirector from "../assets/community-service-director.webp";
+import pldDirector from "../assets/pld-director.webp";
+import publicRelationsDirector from "../assets/public-relations-director.webp";
+import governanceAndEthicsDirector from "../assets/governance-and-ethics-director.webp";
+import internationalService from "../assets/international-sevice.webp";
+import fundraising from "../assets/fundraising.webp";
+import membershipDirector from "../assets/membership-director.webp";
+import sergeantAtArms from "../assets/sergeant-at-arms.webp";
+import trfDirector from "../assets/trf-director.webp";
+import ippAndClubAdvisor from "../assets/ipp-and-club-advisor.webp";
 
 export const boardMembers = [
   {

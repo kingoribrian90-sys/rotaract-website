@@ -1,9 +1,9 @@
-import fun1 from "../assets/fun-projects/fun-1.jpg";
-import fun2 from "../assets/fun-projects/fun-2.jpg";
-import fun3 from "../assets/fun-projects/fun-3.jpg";
-import fun4 from "../assets/fun-projects/fun-4.jpg";
-import fun5 from "../assets/fun-projects/fun-5.jpg";
-import fun6 from "../assets/fun-projects/fun-6.jpeg";
+import fun1 from "../assets/fun-projects/fun-1.webp";
+import fun2 from "../assets/fun-projects/fun-2.webp";
+import fun3 from "../assets/fun-projects/fun-3.webp";
+import fun4 from "../assets/fun-projects/fun-4.webp";
+import fun5 from "../assets/fun-projects/fun-5.webp";
+import fun6 from "../assets/fun-projects/fun-6.webp";
 
 export const testimonials = [
   {
@@ -51,26 +51,56 @@ export const faqs = [
 
 export const blogPosts = [
   {
-    tag: "News",
-    title: "Blog Post Title",
+    tag: "Community",
+    title: "Service, Leadership, and Fellowship at Murang'a University",
     excerpt:
-      "Add your blog post excerpt here. Share insights, stories, and updates from your Rotaract initiatives.",
+      "Follow our latest outreach drives, campus leadership forums, and stories from student volunteers making a difference in Murang'a.",
     date: "April 9, 2026",
   },
 ];
 
 export const galleryImages = [
-  { image: fun1 },
-  { image: fun2 },
-  { image: fun3 },
-  { image: fun4 },
-  { image: fun5 },
-  { image: fun6 },
+  {
+    image: fun1,
+    alt: "Rotaract Club of Murang'a University members during a community outreach event",
+  },
+  {
+    image: fun2,
+    alt: "Students participating in a club service and fellowship gathering",
+  },
+  {
+    image: fun3,
+    alt: "Rotaract members connecting during a campus leadership activity",
+  },
+  {
+    image: fun4,
+    alt: "Group photo of Rotaract volunteers supporting a local initiative",
+  },
+  {
+    image: fun5,
+    alt: "Youth leadership and fellowship session at Murang'a University",
+  },
+  {
+    image: fun6,
+    alt: "Club members celebrating impact and teamwork after a service project",
+  },
 ];
 
 export const eventGalleryImages = [
-  fun1,
-  fun2,
-  fun3,
-  fun4,
+  {
+    image: fun1,
+    alt: "Rotaract members engaging in a community service activity",
+  },
+  {
+    image: fun2,
+    alt: "Fellowship and student collaboration at a club event",
+  },
+  {
+    image: fun3,
+    alt: "Highlights from a Rotaract leadership and service meetup",
+  },
+  {
+    image: fun4,
+    alt: "Volunteers gathered during a Murang'a community outreach",
+  },
 ];
