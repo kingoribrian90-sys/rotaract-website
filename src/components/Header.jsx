@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { routes } from "../data/seo";
 
 const links = [
@@ -27,6 +28,20 @@ function Header({
   onToggleMenu,
   scrolled,
 }) {
+  const menuToggleRef = useRef(null);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") {
+        onToggleMenu();
+        menuToggleRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [menuOpen, onToggleMenu]);
+
   const handleLinkClick = (event, section) => {
     if (isModifiedClick(event)) return;
     event.preventDefault();
@@ -47,13 +62,18 @@ function Header({
             <small>Murang'a University</small>
           </div>
         </a>
-        <nav className={`nav ${menuOpen ? "open" : ""}`} id="navMenu">
+        <nav
+          className={`nav ${menuOpen ? "open" : ""}`}
+          id="navMenu"
+          aria-label="Main navigation"
+        >
           {links.map(([id, label]) => (
             <a
               key={id}
               href={routes[id].path}
               className={`nav-link ${activeSection === id ? "active" : ""}`}
               data-section={id}
+              aria-current={activeSection === id ? "page" : undefined}
               onClick={(event) => handleLinkClick(event, id)}
             >
               {label}
@@ -78,7 +98,9 @@ function Header({
           <button
             className="menu-toggle"
             id="menuToggle"
-            aria-label="Toggle navigation"
+            ref={menuToggleRef}
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-controls="navMenu"
             aria-expanded={menuOpen}
             onClick={onToggleMenu}
           >

@@ -95,6 +95,9 @@ function App() {
 
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
       <Header
         activeSection={activeSection}
         menuOpen={menuOpen}
@@ -102,7 +105,7 @@ function App() {
         onToggleMenu={() => setMenuOpen((open) => !open)}
         scrolled={scrolled}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Suspense fallback={<div className="container section">Loading...</div>}>
           <ActivePage onNavigate={navigate} />
         </Suspense>

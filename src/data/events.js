@@ -2,11 +2,10 @@ export const upcomingEvents = [
   {
     meta: "Every Tuesday at 5:00 pm",
     title: "Fellowship Night",
-    venue: "Tution Block 1, GF3",
+    venue: "Tuition Block 1, GF3",
     description:
       "A social evening for connection, reflection, and strengthening club culture.",
   },
- 
   {
     meta: "Last weekend of September",
     title: "Installation Ceremony",
@@ -17,23 +16,22 @@ export const upcomingEvents = [
   {
     meta: "At least once every semester.",
     title: "Induction Ceremony",
-    venue: "Tution Block 1, GF3",
+    venue: "Tuition Block 1, GF3",
     description:
       "Welcoming new members into the club community and culture of service.",
   },
-   {
+  {
     meta: "Every Friday at 7:00 PM",
     title: "Fellowship nights with Rotary Club of Murang'a",
     venue: "Nokras Hotel, Mukuyu.",
     description:
       "A social evening for connection, reflection, and strengthening club culture.",
   },
-   {
+  {
     meta: "At least once every Month",
     title: "Community Service Projects",
     venue: "Place of the intended project.",
-    description:
-      "To be of great service to the community by giving back.",
+    description: "To be of great service to the community by giving back.",
   },
 ];
 
@@ -63,7 +61,7 @@ export const eventPreview = [
     day: "",
     month: "Every Tuesday at 5pm",
     title: "Club fellowship",
-    location: "Tution Block 1 GF3",
+    location: "Tuition Block 1 GF3",
   },
   {
     day: "",

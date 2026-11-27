@@ -19,26 +19,25 @@ function ImpactStats() {
       if (
         started ||
         !sectionRef.current ||
-        sectionRef.current.getBoundingClientRect().top >=
-          window.innerHeight - 80
-      )
+        sectionRef.current.getBoundingClientRect().top >= window.innerHeight - 80
+      ) {
         return;
+      }
       started = true;
       const start = performance.now();
       const update = (time) => {
         const progress = Math.min((time - start) / 1000, 1);
-        setValues(
-          stats.map(([target]) => Math.floor(Number(target) * progress)),
-        );
+        setValues(stats.map(([target]) => Math.floor(Number(target) * progress)));
         if (progress < 1) frameId = requestAnimationFrame(update);
       };
       frameId = requestAnimationFrame(update);
     };
-    window.addEventListener("scroll", startCounters);
+
+    window.addEventListener("scroll", startCounters, { passive: true });
     startCounters();
     return () => {
       window.removeEventListener("scroll", startCounters);
-      cancelAnimationFrame(frameId);
+      if (frameId) cancelAnimationFrame(frameId);
     };
   }, []);
 

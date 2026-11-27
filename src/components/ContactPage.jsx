@@ -31,7 +31,11 @@ function ContactPage() {
             </div>
             <div className="contact-card">
               <h3>Meeting Location</h3>
-              <p>Tution block 1, GF3</p>
+              <p>Tuition Block 1, GF3</p>
+              <p>
+                Meeting schedules can change. Please email us to confirm before
+                travelling.
+              </p>
             </div>
             <div className="contact-card">
               <h3>Campus Reference</h3>
