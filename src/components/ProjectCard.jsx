@@ -14,8 +14,12 @@ function ProjectCard({
       data-category={category}
     >
       <div className="card-image">
-        {image && image !== "#" && (
+        {image && image !== "#" ? (
           <img src={image} alt={alt} loading="lazy" decoding="async" />
+        ) : (
+          <div className="project-image-placeholder" aria-label="No project photo available">
+            Project photo unavailable
+          </div>
         )}
       </div>
       <div className="card-body">

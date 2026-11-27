@@ -8,6 +8,8 @@ const initialForm = {
   message: "",
 };
 
+const contactEmail = "rotaractorsofmurang'auniversity@gmail.com";
+
 function ContactForm() {
   const [form, setForm] = useState(initialForm);
 
@@ -18,10 +20,11 @@ function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    window.alert(
-      "Thank you for reaching out. This is a static demo form for presentation purposes.",
+    const subject = encodeURIComponent(form.subject);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone || "Not provided"}\n\n${form.message}`,
     );
-    setForm(initialForm);
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -90,9 +93,12 @@ function ContactForm() {
         ></textarea>
       </div>
       <button type="submit" className="btn btn-primary">
-        Submit Message
+        Open email to send
       </button>
-      
+      <p className="form-note" role="note">
+        Your email app will open with your message ready to send. If it does not,
+        email us at <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+      </p>
     </form>
   );
 }

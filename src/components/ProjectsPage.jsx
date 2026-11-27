@@ -24,6 +24,7 @@ function ProjectsPage({ onNavigate }) {
                 key={value}
                 className={`filter-btn ${filter === value ? "active" : ""}`}
                 data-filter={value}
+                aria-pressed={filter === value}
                 onClick={() => setFilter(value)}
               >
                 {label}

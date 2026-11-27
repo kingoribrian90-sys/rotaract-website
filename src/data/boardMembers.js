@@ -68,6 +68,7 @@ export const boardMembers = [
     role: "Professional And Leadership Development Director",
     bio: "Drives learning opportunities, mentorship sessions, and growth-focused member programming.",
     image: pldDirector,
+    imagePosition: "center top",
     alt: "Professional And Leadership Development Director",
     Instagram: "https://www.instagram.com/kingoribrian90/",
   },
